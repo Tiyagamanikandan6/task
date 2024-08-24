@@ -1,0 +1,182 @@
+//1)
+public class Main 
+{
+    public static void main(String[] args)
+{
+int a;
+// here the loop will print until the a value is less than 50  (or) equal to 50 .
+for(a=10;a<=50;a++)
+{
+// using this function to get output
+System.out.println(a);
+}
+}
+}
+
+//2)
+
+import java.util.Scanner;
+
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+       // using scanner function to get input.
+      Scanner obj = new Scanner(System.in);
+      int a = obj.nextInt();
+     //using the fucntion to print the statement  
+      System.out.println("The Entered number is :");
+     //using this function we compare the value of a if it positive it will execute the if action block otherwise it will execute else action block.
+      if(a<0)
+        {
+            // using this function to get output.
+            System.out.print("Negative");
+            
+        }
+       else
+         {
+             // using system function to give the output.
+             System.out.println("Positive");
+         }
+    }
+}
+
+
+//3)
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int number,temp,reversed =0;
+        Scanner obj = new Scanner(System.in);
+        number=obj .nextInt();
+         
+        do{
+            temp=number%10;
+            reversed =reversed*10+temp;
+            number=number/10;
+        }
+        while(number>0);
+        // using system function to give the output
+        System.out.print("Reverse is: " + reversed);
+    }
+
+}
+
+
+//4)
+
+mport java.util.Scanner;
+
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        // using scanner function to get input
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        int b = obj.nextInt();
+        int c = obj.nextInt();
+        //using the fucntion to print the statement  
+        System.out.println("the smallest number is :");
+        if(a<b)
+        {
+
+            if(a<c)
+            {
+                // using this function to get output  
+                System.out.print(a);
+            }
+             else {
+                 // using this function to get output
+                 System.out.println(c);
+            }
+        }
+        else
+        {
+            if(b<c)
+            {
+                // using this function to get output
+                System.out.print(b);
+            }
+            
+
+        }
+
+    }
+}
+
+
+//5)
+
+import java.util.Scanner;
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        int temp = 0;
+        int temp1 = 0;
+         // using scanner function to get input
+        Scanner obj = new Scanner(System.in);
+        int purchase = obj.nextInt();
+        if (purchase <= 500)
+        {
+            // using this function to get output
+            System.out.print("Total payable amount:" +" "+ purchase);
+        }
+        while(purchase>1000)
+        {
+            temp=purchase/100;
+            temp1=temp*80;
+           // using this function to get output
+            System.out.println("Total payable amount:" +" "+temp1);
+            break;
+        }
+       if(purchase>500)
+        {
+            if(purchase<=1000) {
+                temp = purchase / 100;
+                temp1 = temp * 90;
+                 // using this function to get output
+                System.out.println("Total payable amount:" +"  "+temp1);
+            }
+        }
+    }
+}
+
+
+//6)
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n=5 ;
+        int x=5;
+
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (j <= i)
+                {
+                System.out.print((n - i ) - (j-i) );
+                }
+                else
+                {
+                    System.out.print(x);
+                }
+
+            }
+            x--;
+            System.out.println();
+        }
+
+    }
+}
